@@ -1,0 +1,4 @@
+only_inner.txt  14:39 29:1:2023 :
+area0: 6 pixels - failed
+area1: 0 pixels - passed
+area2: 0 pixels - passed
