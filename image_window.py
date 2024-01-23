@@ -61,16 +61,11 @@ class ImageWindow(QMainWindow):
         self.rB = QtGui.QRegion(self.areaB[0], self.areaB[1], self.areaB[2], self.areaB[3])
         self.rC = QtGui.QRegion(self.areaC[0], self.areaC[1], self.areaC[2], self.areaC[3])
 
-        self.area0_count = 0
-        self.areaA_count = 0
-        self.areaB_count = 0
-        self.areaC_count = 0
-
-        self.max_pixels0 = 5
-        self.max_pixelsA = 5  # 5
-        self.max_pixelsB = 5  # 40
-        self.max_pixelsC = 5  # 150
-
+        # 6 elements: 5 for each adjacent type +1 for mouseclick user addups
+        self.area0_count = [0] * 6
+        self.areaA_count = [0] * 6
+        self.areaB_count = [0] * 6
+        self.areaC_count = [0] * 6
 
         # area0 count label
         self.area0_fill_label = QLabel("", self)
@@ -96,6 +91,15 @@ class ImageWindow(QMainWindow):
         self.count_labelC.setGeometry(self.areaC[0], self.areaC[1], 35, 15)
         self.count_labelC.setStyleSheet("background-color: lightblue")
         self.count_labelC.setFont(QFont('Arial', 14))
+
+        # pass/fail label
+        self.pass_fail_label = QLabel(self)
+        self.pass_fail_label.setText("Pass")
+        self.pass_fail_label.setFont(QFont("Arial", 20, QFont.Bold))
+        self.pass_fail_label.setStyleSheet("color: red;")
+        self.pass_fail_label.setGeometry(10, 10, 300, 40)  # Adjust the size and position as needed
+        self.pass_fail_label.setAlignment(Qt.AlignLeft | Qt.AlignTop)
+        self.pass_fail_label.setHidden(True)  # Set the label as hidden initially
 
         self.image_fname = params.default_img
         self.pix_fname = params.default_pix
@@ -166,93 +170,100 @@ class ImageWindow(QMainWindow):
         # blue dots
         for line in self.pix:
             self.pix_splited = [int(s) for s in str.split(line) if s.isdigit()]
-            try:  # x                    y
-                self.paint_dot(self.pix_splited[1], self.pix_splited[0], Qt.blue, 3)
-            except:
-                continue
+            if len(self.pix_splited) > 0:
+                try:  # self.pix_splited[1]: x, self.pix_splited[0]: y
+                    self.paint_dot(self.pix_splited[1], self.pix_splited[0], Qt.blue, 3)
+                except Exception as e:
+                    print(self.pix_splited[1], self.pix_splited[0], e)
+
 
         self.paint_red_dots()
         self.painter.end()
 
-    def mouseDoubleClickEvent(self, event):
-        print('  %d  %d' % (event.y(), event.x()))
-
-        p = QPoint(event.x(), event.y())
-
-        if self.r0.contains(p):
-            self.area0_count += 1
-            self.count_label0.setText(str(self.area0_count))
-
-        elif self.rA.contains(p):
-            self.areaA_count += 1
-            self.count_labelA.setText(str(self.areaA_count))
-
-        elif self.rB.contains(p):
-            self.areaB_count += 1
-            self.count_labelB.setText(str(self.areaB_count))
-
-        elif self.rC.contains(p):
-            self.areaC_count += 1
-            self.count_labelC.setText(str(self.areaC_count))
-
-        if self.area0_count > self.max_pixels0:
-            self.area0_fill_label.setGeometry(self.r0.boundingRect())
-            self.area0_fill_label.setText("")
-            self.area0_fill_label.setStyleSheet("background-color: rgba(0, 255, 0, 40);")
-            self.area0_fill_label.update()
-
-        if self.areaA_count > self.max_pixelsA:
-            self.areaA_l0.setGeometry(self.areaA_r0.boundingRect())
-            self.areaA_l0.setStyleSheet("background-color: rgba(255,0,0, 40);")
-            self.areaA_l0.update()
-
-            self.areaA_l1.setGeometry(self.areaA_r1.boundingRect())
-            self.areaA_l1.setStyleSheet("background-color: rgba(255, 0, 0, 40);")
-            self.areaA_l1.update()
-
-            self.areaA_l2.setGeometry(self.areaA_r2.boundingRect())
-            self.areaA_l2.setStyleSheet("background-color: rgba(255, 0, 0, 40);")
-            self.areaA_l2.update()
-
-            self.areaA_l3.setGeometry(self.areaA_r3.boundingRect())
-            self.areaA_l3.setStyleSheet("background-color: rgba(255, 0, 0, 40);")
-            self.areaA_l3.update()
-
-        if self.areaB_count > self.max_pixelsB:
-            self.areaB_l0.setGeometry(self.areaB_r0.boundingRect())
-            self.areaB_l0.setStyleSheet("background-color: rgba(255,255,0, 40);")
-            self.areaB_l0.update()
-
-            self.areaB_l1.setGeometry(self.areaB_r1.boundingRect())
-            self.areaB_l1.setStyleSheet("background-color: rgba(255, 255, 0, 40);")
-            self.areaB_l1.update()
-
-            self.areaB_l2.setGeometry(self.areaB_r2.boundingRect())
-            self.areaB_l2.setStyleSheet("background-color: rgba(255, 255, 0, 40);")
-            self.areaB_l2.update()
-
-            self.areaB_l3.setGeometry(self.areaB_r3.boundingRect())
-            self.areaB_l3.setStyleSheet("background-color: rgba(255, 255, 0, 40);")
-            self.areaB_l3.update()
-
-        if self.areaC_count > self.max_pixelsC:
-            # self.failed_test("איזור חיצוני")
-
-            self.areaC_l0.setGeometry(self.areaC_r0.boundingRect())
-            self.areaC_l0.setStyleSheet("background-color: rgba(0, 0, 255, 40);")
-            self.areaC_l0.update()
-
-            self.areaC_l1.setGeometry(self.areaC_r1.boundingRect())
-            self.areaC_l1.setStyleSheet("background-color: rgba(0, 0, 255, 40);")
-            self.areaC_l1.update()
-
-            self.areaC_l2.setGeometry(self.areaC_r2.boundingRect())
-            self.areaC_l2.setStyleSheet("background-color: rgba(0, 0, 255, 40);")
-            self.areaC_l2.update()
-
-            self.areaC_l3.setGeometry(self.areaC_r3.boundingRect())
-            self.areaC_l3.setStyleSheet("background-color: rgba(0, 0, 255, 40);")
-            self.areaC_l3.update()
+    """
+    mouseDoubleClickEvent handles double cliking on image.
+    meaning it used to handle user addin-ins to the pixel count.
+    disabled in new version.
+    """
+    # def mouseDoubleClickEvent(self, event):
+    #     print('  %d  %d' % (event.y(), event.x()))
+    #
+    #     p = QPoint(event.x(), event.y())
+    #
+    #     if self.r0.contains(p):
+    #         self.area0_count[5] += 1
+    #         self.count_label0.setText(str(sum(self.area0_count)))
+    #
+    #     elif self.rA.contains(p):
+    #         self.areaA_count[5] += 1
+    #         self.count_labelA.setText(str(sum(self.areaA_count)))
+    #
+    #     elif self.rB.contains(p):
+    #         self.areaB_count[5] += 1
+    #         self.count_labelB.setText(str(sum(self.areaB_count)))
+    #
+    #     elif self.rC.contains(p):
+    #         self.areaC_count[5] += 1
+    #         self.count_labelC.setText(str(sum(self.areaC_count)))
+    #
+    #     if self.area0_count > params.max_pixels0:
+    #         self.area0_fill_label.setGeometry(self.r0.boundingRect())
+    #         self.area0_fill_label.setText("")
+    #         self.area0_fill_label.setStyleSheet("background-color: rgba(0, 255, 0, 40);")
+    #         self.area0_fill_label.update()
+    #
+    #     if self.areaA_count > params.max_pixelsA:
+    #         self.areaA_l0.setGeometry(self.areaA_r0.boundingRect())
+    #         self.areaA_l0.setStyleSheet("background-color: rgba(255,0,0, 40);")
+    #         self.areaA_l0.update()
+    #
+    #         self.areaA_l1.setGeometry(self.areaA_r1.boundingRect())
+    #         self.areaA_l1.setStyleSheet("background-color: rgba(255, 0, 0, 40);")
+    #         self.areaA_l1.update()
+    #
+    #         self.areaA_l2.setGeometry(self.areaA_r2.boundingRect())
+    #         self.areaA_l2.setStyleSheet("background-color: rgba(255, 0, 0, 40);")
+    #         self.areaA_l2.update()
+    #
+    #         self.areaA_l3.setGeometry(self.areaA_r3.boundingRect())
+    #         self.areaA_l3.setStyleSheet("background-color: rgba(255, 0, 0, 40);")
+    #         self.areaA_l3.update()
+    #
+    #     if self.areaB_count > params.max_pixelsB:
+    #         self.areaB_l0.setGeometry(self.areaB_r0.boundingRect())
+    #         self.areaB_l0.setStyleSheet("background-color: rgba(255,255,0, 40);")
+    #         self.areaB_l0.update()
+    #
+    #         self.areaB_l1.setGeometry(self.areaB_r1.boundingRect())
+    #         self.areaB_l1.setStyleSheet("background-color: rgba(255, 255, 0, 40);")
+    #         self.areaB_l1.update()
+    #
+    #         self.areaB_l2.setGeometry(self.areaB_r2.boundingRect())
+    #         self.areaB_l2.setStyleSheet("background-color: rgba(255, 255, 0, 40);")
+    #         self.areaB_l2.update()
+    #
+    #         self.areaB_l3.setGeometry(self.areaB_r3.boundingRect())
+    #         self.areaB_l3.setStyleSheet("background-color: rgba(255, 255, 0, 40);")
+    #         self.areaB_l3.update()
+    #
+    #     if self.areaC_count > params.max_pixelsC:
+    #         # self.failed_test("איזור חיצוני")
+    #
+    #         self.areaC_l0.setGeometry(self.areaC_r0.boundingRect())
+    #         self.areaC_l0.setStyleSheet("background-color: rgba(0, 0, 255, 40);")
+    #         self.areaC_l0.update()
+    #
+    #         self.areaC_l1.setGeometry(self.areaC_r1.boundingRect())
+    #         self.areaC_l1.setStyleSheet("background-color: rgba(0, 0, 255, 40);")
+    #         self.areaC_l1.update()
+    #
+    #         self.areaC_l2.setGeometry(self.areaC_r2.boundingRect())
+    #         self.areaC_l2.setStyleSheet("background-color: rgba(0, 0, 255, 40);")
+    #         self.areaC_l2.update()
+    #
+    #         self.areaC_l3.setGeometry(self.areaC_r3.boundingRect())
+    #         self.areaC_l3.setStyleSheet("background-color: rgba(0, 0, 255, 40);")
+    #         self.areaC_l3.update()
 
     # check if pixel is in which area
     # def check_areaA(self, x, y):
