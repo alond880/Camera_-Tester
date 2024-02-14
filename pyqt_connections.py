@@ -12,7 +12,6 @@ class PyQtConnections:
         self.backend = BackEnd(self.browser, self.image_window)
         self.ui_obj = UI(self.browser, self.image_window)
 
-
         self.init_conn()
 
     def browser_conn(self):

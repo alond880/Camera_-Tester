@@ -68,29 +68,29 @@ class ImageWindow(QMainWindow):
         self.areaC_count = [0] * 6
 
         # area0 count label
-        self.area0_fill_label = QLabel("", self)
-        self.count_label0 = QLabel("0", self)
-        self.count_label0.setGeometry(self.area0[0] - 15, self.area0[1] - 15, 15, 15)
-        self.count_label0.setStyleSheet("background-color: red")
-        self.count_label0.setFont(QFont('Arial', 14))
-
-        # areaA count label
-        self.count_labelA = QLabel("0", self)
-        self.count_labelA.setGeometry(self.areaA[0], self.areaA[1], 35, 15)
-        self.count_labelA.setStyleSheet("background-color: red")
-        self.count_labelA.setFont(QFont('Arial', 14))
-
-        # areaB count label
-        self.count_labelB = QLabel("0", self)
-        self.count_labelB.setGeometry(self.areaB[0], self.areaB[1], 35, 15)
-        self.count_labelB.setStyleSheet("background-color: yellow")
-        self.count_labelB.setFont(QFont('Arial', 14))
-
-        # areaB count label
-        self.count_labelC = QLabel("0", self)
-        self.count_labelC.setGeometry(self.areaC[0], self.areaC[1], 35, 15)
-        self.count_labelC.setStyleSheet("background-color: lightblue")
-        self.count_labelC.setFont(QFont('Arial', 14))
+        # self.area0_fill_label = QLabel("", self)
+        # self.count_label0 = QLabel("0", self)
+        # self.count_label0.setGeometry(self.area0[0] - 15, self.area0[1] - 15, 15, 15)
+        # self.count_label0.setStyleSheet("background-color: red")
+        # self.count_label0.setFont(QFont('Arial', 14))
+        #
+        # # areaA count label
+        # self.count_labelA = QLabel("0", self)
+        # self.count_labelA.setGeometry(self.areaA[0], self.areaA[1], 35, 15)
+        # self.count_labelA.setStyleSheet("background-color: red")
+        # self.count_labelA.setFont(QFont('Arial', 14))
+        #
+        # # areaB count label
+        # self.count_labelB = QLabel("0", self)
+        # self.count_labelB.setGeometry(self.areaB[0], self.areaB[1], 35, 15)
+        # self.count_labelB.setStyleSheet("background-color: yellow")
+        # self.count_labelB.setFont(QFont('Arial', 14))
+        #
+        # # areaB count label
+        # self.count_labelC = QLabel("0", self)
+        # self.count_labelC.setGeometry(self.areaC[0], self.areaC[1], 35, 15)
+        # self.count_labelC.setStyleSheet("background-color: lightblue")
+        # self.count_labelC.setFont(QFont('Arial', 14))
 
         # pass/fail label
         self.pass_fail_label = QLabel(self)
@@ -114,6 +114,7 @@ class ImageWindow(QMainWindow):
         self.pixels_splitted = []
         self.failed_pixels = []
         self.red_dots = []
+        self.circles = []  # containes all circles dictionarys, not in any order, made only for drawing purposes
 
         self.painter = QPainter()
         self.pixmap = QPixmap(self.image_fname)
@@ -128,16 +129,26 @@ class ImageWindow(QMainWindow):
             return True
 
     def paint_dot(self, x, y, color, thick):
-        # print(x, y)
         pen = QPen(color, thick)
         self.painter.setPen(pen)
         self.painter.drawPoint(x, y)
+
+    def paint_circle(self, x, y, rad, color, thick=1):
+        pen = QPen(color, thick)
+        self.painter.setPen(pen)
+        self.painter.drawEllipse(x, y, rad, rad)
 
     def paint_red_dots(self):
         # self.red_dots is constructed from arrays each containing (x, y) coordinates of different types (meaning costumer requirements types)
         # for arr in self.red_dots:S
         for (x, y) in self.red_dots:
+            # self.paint_circle(x, y, 20, QColor("red"))
             self.paint_dot(x, y, Qt.red, 3)
+
+    def paint_circles(self):
+        for circle in self.circles:
+            self.paint_circle(int(circle["center"][0]), int(circle["center"][1]), circle["rad"], circle["color"])
+
 
     def paintEvent(self, event):
         self.pixmap.load(self.image_fname)
@@ -178,6 +189,7 @@ class ImageWindow(QMainWindow):
 
 
         self.paint_red_dots()
+        self.paint_circles()
         self.painter.end()
 
     """

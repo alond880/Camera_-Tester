@@ -1,0 +1,390 @@
+2024-02-11 12:41:18,193 - logger - INFO - Check failed: areaA
+2024-02-11 12:41:19,229 - logger - INFO - Check failed: type1: 0     type2: 2     type3: 1     type4: 0     type5: 0     
+2024-02-11 13:06:56,515 - logger - INFO - Check failed: areaA
+2024-02-11 13:06:56,517 - logger - INFO - Check failed: type1: 0     type2: 2     type3: 1     type4: 0     type5: 0     
+2024-02-11 13:09:51,702 - logger - INFO - Check failed: areaA
+2024-02-11 13:09:51,703 - logger - INFO - Check failed: type1: 0     type2: 2     type3: 1     type4: 0     type5: 0     
+2024-02-11 13:13:58,007 - logger - INFO - Check failed: areaA
+2024-02-11 13:13:58,008 - logger - INFO - Check failed: type1: 0     type2: 2     type3: 1     type4: 0     type5: 0     
+2024-02-11 13:17:12,483 - logger - INFO - Check failed: areaA
+2024-02-11 13:17:12,484 - logger - INFO - Check failed: type1: 0     type2: 2     type3: 1     type4: 0     type5: 0     
+2024-02-11 13:29:01,149 - logger - INFO - Check failed: areaA
+2024-02-11 13:29:01,155 - logger - INFO - Check failed: type1: 0     type2: 2     type3: 1     type4: 0     type5: 0     
+2024-02-11 13:31:28,394 - logger - INFO - Check failed: areaA
+2024-02-11 13:31:28,395 - logger - INFO - Check failed: type1: 0     type2: 2     type3: 1     type4: 0     type5: 0     
+2024-02-11 13:31:28,395 - logger - INFO - Check failed: areaB
+2024-02-11 13:31:28,396 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-11 13:31:28,396 - logger - INFO - Check failed: areaC
+2024-02-11 13:31:28,396 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-11 13:37:05,432 - logger - INFO - Check failed: areaA
+2024-02-11 13:37:05,433 - logger - INFO - Check failed: type1: 0     type2: 2     type3: 1     type4: 0     type5: 0     
+2024-02-11 13:37:05,434 - logger - INFO - Check failed: areaB
+2024-02-11 13:37:05,434 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-11 13:37:05,435 - logger - INFO - Check failed: areaC
+2024-02-11 13:37:05,436 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-11 13:42:25,632 - logger - INFO - Check failed: areaA
+2024-02-11 13:42:25,632 - logger - INFO - Check failed: type1: 0     type2: 2     type3: 1     type4: 0     type5: 0     
+2024-02-11 13:42:25,633 - logger - INFO - Check failed: areaB
+2024-02-11 13:42:25,633 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-11 13:42:25,634 - logger - INFO - Check failed: areaC
+2024-02-11 13:42:25,634 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 09:11:05,110 - logger - INFO - Check failed: areaA
+2024-02-13 09:11:05,111 - logger - INFO - Check failed: type1: 0     type2: 8     type3: 0     type4: 0     type5: 0     
+2024-02-13 09:11:34,128 - logger - INFO - Check failed: areaA
+2024-02-13 09:11:34,128 - logger - INFO - Check failed: type1: 0     type2: 2     type3: 1     type4: 0     type5: 0     
+2024-02-13 09:11:34,129 - logger - INFO - Check failed: areaB
+2024-02-13 09:11:34,129 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 09:11:34,130 - logger - INFO - Check failed: areaC
+2024-02-13 09:11:34,130 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 09:13:28,144 - logger - INFO - Check failed: areaA
+2024-02-13 09:13:28,145 - logger - INFO - Check failed: type1: 0     type2: 2     type3: 1     type4: 0     type5: 0     
+2024-02-13 09:13:28,146 - logger - INFO - Check failed: areaB
+2024-02-13 09:13:28,146 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 09:13:28,146 - logger - INFO - Check failed: areaC
+2024-02-13 09:13:28,146 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 09:15:47,798 - logger - INFO - Check failed: areaA
+2024-02-13 09:15:47,799 - logger - INFO - Check failed: type1: 0     type2: 2     type3: 1     type4: 0     type5: 0     
+2024-02-13 09:15:47,800 - logger - INFO - Check failed: areaB
+2024-02-13 09:15:47,800 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 09:15:47,801 - logger - INFO - Check failed: areaC
+2024-02-13 09:15:47,801 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 09:51:08,069 - logger - INFO - Check failed: areaA
+2024-02-13 09:51:08,071 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 09:51:08,072 - logger - INFO - Check failed: areaB
+2024-02-13 09:51:08,072 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 09:51:08,073 - logger - INFO - Check failed: areaC
+2024-02-13 09:51:08,073 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:08:17,474 - logger - INFO - Check failed: areaA
+2024-02-13 10:08:17,474 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:08:17,475 - logger - INFO - Check failed: areaB
+2024-02-13 10:08:17,475 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:08:17,475 - logger - INFO - Check failed: areaC
+2024-02-13 10:08:17,476 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:09:19,614 - logger - INFO - Check failed: areaA
+2024-02-13 10:09:19,615 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:09:19,616 - logger - INFO - Check failed: areaB
+2024-02-13 10:09:19,616 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:09:19,616 - logger - INFO - Check failed: areaC
+2024-02-13 10:09:19,616 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:09:51,757 - logger - INFO - Check failed: areaA
+2024-02-13 10:09:51,758 - logger - INFO - Check failed: type1: 0     type2: 8     type3: 0     type4: 0     type5: 0     
+2024-02-13 10:10:41,952 - logger - INFO - Check failed: areaA
+2024-02-13 10:10:41,953 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:10:41,954 - logger - INFO - Check failed: areaB
+2024-02-13 10:10:41,954 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:10:41,954 - logger - INFO - Check failed: areaC
+2024-02-13 10:10:41,955 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:11:05,635 - logger - INFO - Check failed: areaA
+2024-02-13 10:11:05,636 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:11:05,636 - logger - INFO - Check failed: areaB
+2024-02-13 10:11:05,636 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:11:05,637 - logger - INFO - Check failed: areaC
+2024-02-13 10:11:05,637 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:11:28,564 - logger - INFO - Check failed: areaA
+2024-02-13 10:11:28,565 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:11:28,565 - logger - INFO - Check failed: areaB
+2024-02-13 10:11:28,566 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:11:28,566 - logger - INFO - Check failed: areaC
+2024-02-13 10:11:28,566 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:11:54,369 - logger - INFO - Check failed: areaA
+2024-02-13 10:11:54,369 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:11:54,370 - logger - INFO - Check failed: areaB
+2024-02-13 10:11:54,370 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:11:54,371 - logger - INFO - Check failed: areaC
+2024-02-13 10:11:54,371 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:12:35,285 - logger - INFO - Check failed: areaA
+2024-02-13 10:12:35,286 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:12:35,286 - logger - INFO - Check failed: areaB
+2024-02-13 10:12:35,287 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:12:35,287 - logger - INFO - Check failed: areaC
+2024-02-13 10:12:35,287 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:13:41,665 - logger - INFO - Check failed: areaA
+2024-02-13 10:13:41,666 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:13:41,666 - logger - INFO - Check failed: areaB
+2024-02-13 10:13:41,666 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:13:41,667 - logger - INFO - Check failed: areaC
+2024-02-13 10:13:41,667 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:15:02,772 - logger - INFO - Check failed: areaA
+2024-02-13 10:15:02,773 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:15:02,773 - logger - INFO - Check failed: areaB
+2024-02-13 10:15:02,773 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:15:02,774 - logger - INFO - Check failed: areaC
+2024-02-13 10:15:02,774 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:15:35,561 - logger - INFO - Check failed: areaA
+2024-02-13 10:15:35,562 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:15:35,563 - logger - INFO - Check failed: areaB
+2024-02-13 10:15:35,563 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:15:35,564 - logger - INFO - Check failed: areaC
+2024-02-13 10:15:35,564 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:20:54,996 - logger - INFO - Check failed: areaA
+2024-02-13 10:20:54,997 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:20:54,997 - logger - INFO - Check failed: areaB
+2024-02-13 10:20:54,998 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:20:54,998 - logger - INFO - Check failed: areaC
+2024-02-13 10:20:54,998 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:21:40,217 - logger - INFO - Check failed: areaA
+2024-02-13 10:21:40,217 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:21:40,218 - logger - INFO - Check failed: areaB
+2024-02-13 10:21:40,218 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:21:40,218 - logger - INFO - Check failed: areaC
+2024-02-13 10:21:40,219 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:22:06,141 - logger - INFO - Check failed: areaA
+2024-02-13 10:22:06,142 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:22:06,142 - logger - INFO - Check failed: areaB
+2024-02-13 10:22:06,143 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:22:06,143 - logger - INFO - Check failed: areaC
+2024-02-13 10:22:06,143 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:22:50,834 - logger - INFO - Check failed: areaA
+2024-02-13 10:22:50,835 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:22:50,836 - logger - INFO - Check failed: areaB
+2024-02-13 10:22:50,836 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:22:50,836 - logger - INFO - Check failed: areaC
+2024-02-13 10:22:50,836 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:26:08,625 - logger - INFO - Check failed: areaA
+2024-02-13 10:26:08,626 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:26:08,626 - logger - INFO - Check failed: areaB
+2024-02-13 10:26:08,627 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:26:08,627 - logger - INFO - Check failed: areaC
+2024-02-13 10:26:08,627 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:27:05,277 - logger - INFO - Check failed: areaA
+2024-02-13 10:27:05,278 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:27:05,278 - logger - INFO - Check failed: areaB
+2024-02-13 10:27:05,278 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:27:05,279 - logger - INFO - Check failed: areaC
+2024-02-13 10:27:05,279 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:31:26,978 - logger - INFO - Check failed: areaA
+2024-02-13 10:31:26,979 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:31:26,979 - logger - INFO - Check failed: areaB
+2024-02-13 10:31:26,979 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:31:26,980 - logger - INFO - Check failed: areaC
+2024-02-13 10:31:26,980 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:34:26,899 - logger - INFO - Check failed: areaA
+2024-02-13 10:34:26,899 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:34:26,900 - logger - INFO - Check failed: areaB
+2024-02-13 10:34:26,900 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:34:26,901 - logger - INFO - Check failed: areaC
+2024-02-13 10:34:26,901 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:36:15,441 - logger - INFO - Check failed: areaA
+2024-02-13 10:36:15,442 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:36:15,442 - logger - INFO - Check failed: areaB
+2024-02-13 10:36:15,443 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:36:15,444 - logger - INFO - Check failed: areaC
+2024-02-13 10:36:15,444 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:37:17,488 - logger - INFO - Check failed: areaA
+2024-02-13 10:37:17,489 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:37:17,490 - logger - INFO - Check failed: areaB
+2024-02-13 10:37:17,490 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:37:17,491 - logger - INFO - Check failed: areaC
+2024-02-13 10:37:17,491 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:37:36,723 - logger - INFO - Check failed: areaA
+2024-02-13 10:37:36,724 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:37:36,725 - logger - INFO - Check failed: areaB
+2024-02-13 10:37:36,725 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:37:36,725 - logger - INFO - Check failed: areaC
+2024-02-13 10:37:36,726 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:38:25,983 - logger - INFO - Check failed: areaA
+2024-02-13 10:38:25,983 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:38:25,984 - logger - INFO - Check failed: areaB
+2024-02-13 10:38:25,984 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:38:25,985 - logger - INFO - Check failed: areaC
+2024-02-13 10:38:25,985 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:38:57,686 - logger - INFO - Check failed: areaA
+2024-02-13 10:38:57,687 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:38:57,687 - logger - INFO - Check failed: areaB
+2024-02-13 10:38:57,688 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:38:57,688 - logger - INFO - Check failed: areaC
+2024-02-13 10:38:57,688 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:40:20,758 - logger - INFO - Check failed: areaA
+2024-02-13 10:40:20,759 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:40:20,760 - logger - INFO - Check failed: areaB
+2024-02-13 10:40:20,760 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:40:20,760 - logger - INFO - Check failed: areaC
+2024-02-13 10:40:20,760 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:40:53,964 - logger - INFO - Check failed: areaA
+2024-02-13 10:40:53,965 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:40:53,965 - logger - INFO - Check failed: areaB
+2024-02-13 10:40:53,965 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:40:53,966 - logger - INFO - Check failed: areaC
+2024-02-13 10:40:53,966 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:41:20,771 - logger - INFO - Check failed: areaA
+2024-02-13 10:41:20,771 - logger - INFO - Check failed: type1: 0     type2: 8     type3: 0     type4: 0     type5: 0     
+2024-02-13 10:41:43,594 - logger - INFO - Check failed: areaA
+2024-02-13 10:41:43,595 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:41:43,595 - logger - INFO - Check failed: areaB
+2024-02-13 10:41:43,596 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:41:43,596 - logger - INFO - Check failed: areaC
+2024-02-13 10:41:43,596 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:41:57,956 - logger - INFO - Check failed: areaA
+2024-02-13 10:41:57,957 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:41:57,958 - logger - INFO - Check failed: areaB
+2024-02-13 10:41:57,958 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:41:57,958 - logger - INFO - Check failed: areaC
+2024-02-13 10:41:57,959 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:42:12,907 - logger - INFO - Check failed: areaA
+2024-02-13 10:42:12,907 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:42:12,908 - logger - INFO - Check failed: areaB
+2024-02-13 10:42:12,908 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:42:12,909 - logger - INFO - Check failed: areaC
+2024-02-13 10:42:12,909 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:42:27,465 - logger - INFO - Check failed: areaA
+2024-02-13 10:42:27,466 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:42:27,467 - logger - INFO - Check failed: areaB
+2024-02-13 10:42:27,467 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:42:27,467 - logger - INFO - Check failed: areaC
+2024-02-13 10:42:27,467 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:49:19,378 - logger - INFO - Check failed: areaA
+2024-02-13 10:49:19,379 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:49:19,379 - logger - INFO - Check failed: areaB
+2024-02-13 10:49:19,380 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:49:19,380 - logger - INFO - Check failed: areaC
+2024-02-13 10:49:19,380 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:49:56,101 - logger - INFO - Check failed: areaA
+2024-02-13 10:49:56,102 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:49:56,102 - logger - INFO - Check failed: areaB
+2024-02-13 10:49:56,102 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:49:56,103 - logger - INFO - Check failed: areaC
+2024-02-13 10:49:56,103 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 10:58:52,880 - logger - INFO - Check failed: areaA
+2024-02-13 10:58:52,880 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 10:58:52,881 - logger - INFO - Check failed: areaB
+2024-02-13 10:58:52,881 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 10:58:52,882 - logger - INFO - Check failed: areaC
+2024-02-13 10:58:52,882 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 11:03:20,553 - logger - INFO - Check failed: areaA
+2024-02-13 11:03:20,554 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 11:03:20,554 - logger - INFO - Check failed: areaB
+2024-02-13 11:03:20,555 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 11:03:20,555 - logger - INFO - Check failed: areaC
+2024-02-13 11:03:20,555 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 11:03:56,661 - logger - INFO - Check failed: areaA
+2024-02-13 11:03:56,662 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 11:03:56,663 - logger - INFO - Check failed: areaB
+2024-02-13 11:03:56,663 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 11:03:56,664 - logger - INFO - Check failed: areaC
+2024-02-13 11:03:56,664 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 11:04:12,536 - logger - INFO - Check failed: areaA
+2024-02-13 11:04:12,537 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 11:04:12,537 - logger - INFO - Check failed: areaB
+2024-02-13 11:04:12,538 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 11:04:12,538 - logger - INFO - Check failed: areaC
+2024-02-13 11:04:12,538 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 11:04:28,656 - logger - INFO - Check failed: areaA
+2024-02-13 11:04:28,656 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 11:04:28,657 - logger - INFO - Check failed: areaB
+2024-02-13 11:04:28,657 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 11:04:28,657 - logger - INFO - Check failed: areaC
+2024-02-13 11:04:28,658 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 11:04:49,734 - logger - INFO - Check failed: areaA
+2024-02-13 11:04:49,735 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 11:04:49,736 - logger - INFO - Check failed: areaB
+2024-02-13 11:04:49,736 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 11:04:49,736 - logger - INFO - Check failed: areaC
+2024-02-13 11:04:49,736 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 11:05:48,030 - logger - INFO - Check failed: areaA
+2024-02-13 11:05:48,031 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 11:05:48,032 - logger - INFO - Check failed: areaB
+2024-02-13 11:05:48,032 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 11:05:48,033 - logger - INFO - Check failed: areaC
+2024-02-13 11:05:48,033 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 12:07:12,002 - logger - INFO - Check failed: areaA
+2024-02-13 12:07:12,002 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 12:07:12,003 - logger - INFO - Check failed: areaB
+2024-02-13 12:07:12,003 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 12:07:12,004 - logger - INFO - Check failed: areaC
+2024-02-13 12:07:12,004 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 12:07:28,658 - logger - INFO - Check failed: areaA
+2024-02-13 12:07:28,659 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 12:07:28,659 - logger - INFO - Check failed: areaB
+2024-02-13 12:07:28,660 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 12:07:28,660 - logger - INFO - Check failed: areaC
+2024-02-13 12:07:28,660 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 12:07:49,158 - logger - INFO - Check failed: areaA
+2024-02-13 12:07:49,158 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 12:07:49,159 - logger - INFO - Check failed: areaB
+2024-02-13 12:07:49,159 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 12:07:49,160 - logger - INFO - Check failed: areaC
+2024-02-13 12:07:49,160 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 12:08:02,092 - logger - INFO - Check failed: areaA
+2024-02-13 12:08:02,093 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 12:08:02,093 - logger - INFO - Check failed: areaB
+2024-02-13 12:08:02,094 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 12:08:02,094 - logger - INFO - Check failed: areaC
+2024-02-13 12:08:02,094 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 12:08:10,550 - logger - INFO - Check failed: areaA
+2024-02-13 12:08:10,550 - logger - INFO - Check failed: type1: 0     type2: 8     type3: 0     type4: 0     type5: 0     
+2024-02-13 12:13:17,259 - logger - INFO - Check failed: areaA
+2024-02-13 12:13:17,260 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 12:13:17,260 - logger - INFO - Check failed: areaB
+2024-02-13 12:13:17,260 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 12:13:17,261 - logger - INFO - Check failed: areaC
+2024-02-13 12:13:17,261 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 12:13:35,183 - logger - INFO - Check failed: areaA
+2024-02-13 12:13:35,184 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 12:13:35,185 - logger - INFO - Check failed: areaB
+2024-02-13 12:13:35,185 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 12:13:35,185 - logger - INFO - Check failed: areaC
+2024-02-13 12:13:35,185 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 13:13:51,455 - logger - INFO - Check failed: areaA
+2024-02-13 13:13:51,455 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 13:13:51,456 - logger - INFO - Check failed: areaB
+2024-02-13 13:13:51,456 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 13:13:51,457 - logger - INFO - Check failed: areaC
+2024-02-13 13:13:51,457 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 14:22:44,716 - logger - INFO - Check failed: areaA
+2024-02-13 14:22:44,717 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 14:22:44,718 - logger - INFO - Check failed: areaB
+2024-02-13 14:22:44,718 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 14:22:44,718 - logger - INFO - Check failed: areaC
+2024-02-13 14:22:44,719 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 14:33:42,687 - logger - INFO - Check failed: areaA
+2024-02-13 14:33:42,688 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 14:33:42,689 - logger - INFO - Check failed: areaB
+2024-02-13 14:33:42,689 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 14:33:42,690 - logger - INFO - Check failed: areaC
+2024-02-13 14:33:42,690 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 16:14:29,558 - logger - INFO - Check failed: areaA
+2024-02-13 16:14:29,561 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 16:14:29,562 - logger - INFO - Check failed: areaB
+2024-02-13 16:14:29,562 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 16:14:29,562 - logger - INFO - Check failed: areaC
+2024-02-13 16:14:29,563 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 16:53:11,526 - logger - INFO - Check failed: areaA
+2024-02-13 16:53:11,527 - logger - INFO - Check failed: type1: 0     type2: 1     type3: 1     type4: 0     type5: 0     
+2024-02-13 16:53:11,528 - logger - INFO - Check failed: areaB
+2024-02-13 16:53:11,528 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 16:53:11,530 - logger - INFO - Check failed: areaC
+2024-02-13 16:53:11,530 - logger - INFO - Check failed: type1: 0     type2: 51     type3: 8     type4: 3     type5: 1     
+2024-02-13 17:01:05,175 - logger - INFO - Check failed: areaB
+2024-02-13 17:01:05,176 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-13 17:01:05,177 - logger - INFO - Check failed: areaC
+2024-02-13 17:01:05,177 - logger - INFO - Check failed: type1: 0     type2: 28     type3: 29     type4: 4     type5: 1     
+2024-02-13 17:01:28,751 - logger - INFO - Check failed: areaA
+2024-02-13 17:01:28,751 - logger - INFO - Check failed: type1: 0     type2: 6     type3: 0     type4: 0     type5: 0     
+2024-02-13 17:01:36,149 - logger - INFO - Check failed: areaA
+2024-02-13 17:01:36,149 - logger - INFO - Check failed: type1: 0     type2: 14     type3: 0     type4: 0     type5: 0     
+2024-02-14 11:10:23,083 - logger - INFO - Check failed: areaA
+2024-02-14 11:10:23,085 - logger - INFO - Check failed: type1: 0     type2: 6     type3: 0     type4: 0     type5: 0     
+2024-02-14 11:10:36,334 - logger - INFO - Check failed: areaB
+2024-02-14 11:10:36,335 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-14 11:10:36,335 - logger - INFO - Check failed: areaC
+2024-02-14 11:10:36,335 - logger - INFO - Check failed: type1: 0     type2: 46     type3: 48     type4: 4     type5: 1     
+2024-02-14 12:10:35,926 - logger - INFO - Check failed: areaB
+2024-02-14 12:10:35,926 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-14 12:10:35,927 - logger - INFO - Check failed: areaC
+2024-02-14 12:10:35,927 - logger - INFO - Check failed: type1: 0     type2: 28     type3: 29     type4: 4     type5: 1     
+2024-02-14 12:11:14,845 - logger - INFO - Check failed: areaB
+2024-02-14 12:11:14,846 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-14 12:11:14,847 - logger - INFO - Check failed: areaC
+2024-02-14 12:11:14,847 - logger - INFO - Check failed: type1: 0     type2: 28     type3: 29     type4: 4     type5: 1     
+2024-02-14 12:11:44,797 - logger - INFO - Check failed: areaB
+2024-02-14 12:11:44,798 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-14 12:11:44,798 - logger - INFO - Check failed: areaC
+2024-02-14 12:11:44,798 - logger - INFO - Check failed: type1: 0     type2: 28     type3: 29     type4: 4     type5: 1     
+2024-02-14 12:13:49,719 - logger - INFO - Check failed: areaB
+2024-02-14 12:13:49,721 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-14 12:13:49,722 - logger - INFO - Check failed: areaC
+2024-02-14 12:13:49,722 - logger - INFO - Check failed: type1: 0     type2: 28     type3: 29     type4: 4     type5: 1     
+2024-02-14 12:18:41,605 - logger - INFO - Check failed: areaB
+2024-02-14 12:18:41,606 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
+2024-02-14 12:18:41,607 - logger - INFO - Check failed: areaC
+2024-02-14 12:18:41,607 - logger - INFO - Check failed: type1: 0     type2: 28     type3: 29     type4: 4     type5: 1     
