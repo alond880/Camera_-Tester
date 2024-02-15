@@ -256,69 +256,56 @@ class BackEnd:
         self.AJ_count(self.type4, 4)
         self.AJ_count(self.type5, 5)
 
-    def dripping(self, area_info, origin_type, extra_groups, bigger_types):
+    def update_counts(self):
+        try:
+            for i in range(1, 6):
+                self.image_window.area0_count[i-1] = self.area0_info["type" + str(i) + "_count"]
+                self.image_window.areaA_count[i-1] = self.areaA_info["type" + str(i) + "_count"]
+                self.image_window.areaB_count[i-1] = self.areaB_info["type" + str(i) + "_count"]
+                self.image_window.areaC_count[i-1] = self.areaC_info["type" + str(i) + "_count"]
 
-        """
-        TODO: make it so changes happens in all other array
+        except Exception as e:
+            self.logger.log_exception(f"Update_counts: {e}")
+    def dripping(self, area_info, origin_type, bigger_types, extra_groups_num):
+        try:
+            for type in bigger_types:  # for each type in the following types in the hierarchy
+                while extra_groups_num > 0:  # while there is room
+                    if area_info[type + "_max_count"] > area_info[type + "_count"]:
+                        group = area_info[origin_type].pop(-1)
+                        area_info[type].append(group)
 
-        :param area_info:
-        :param origin_type:
-        :param extra_groups:
-        :param bigger_types:
-        :return:
-        """
+                        extra_groups_num -= 1
+                        area_info[origin_type + "_count"] -= 1
+                        area_info[type + "_count"] += 1
+                    else:
+                        break
 
-        for type in bigger_types:  # for each type in the following types in the hierarchy
-            for i, group in enumerate(extra_groups):  # for each group in extra groups
-                if area_info[type + "_count"] < area_info[type + "_max_count"]:  # while there is room
+                if type == "type5" and area_info[type + "_count"] <= area_info[type + "_max_count"]:
+                    return False  # end of line, check failed
 
-                    area_info[type].append(group)
-                    area_info[origin_type].remove(group)
-                    extra_groups.remove(group)
+            return True  # check have been dripped
 
+        except Exception as e:
+            self.logger.log_error(f"Dripping: {e}")
 
-                    area_info[origin_type + "_count"] -= 1
-                    area_info[type + "_count"] += 1
-
-
-
-            if area_info[origin_type + "_count"] < area_info[origin_type + "_max_count"]:
-                return True
-
-        return False
 
     def dripping_check(self):
         types = ["type1", "type2", "type3", "type4", "type5"]
 
         for i in range(0, 5):
             if self.image_window.area0_count[i] > params.max_pixels0[i] != 0:
-                self.dripping(self.area0_info,
-                              "type" + str(i),
-                              self.area0_info["type" + str(i)][params.max_pixels0[i]:],
-                              types[i:])
-                self.image_window.area0_count[i] = self.area0_info["type" + str(i) + "_count"]
+                self.dripping(self.area0_info, "type" + str(i), types[i:], self.image_window.area0_count[i] - params.max_pixels0[i])
 
             if self.image_window.areaA_count[i] > params.max_pixelsA[i] != 0:
-                self.dripping(self.areaA_info,
-                              "type" + str(i),
-                              self.areaA_info["type" + str(i)][params.max_pixelsA[i]:],
-                              types[i:])
-                self.image_window.areaA_count[i] = self.areaA_info["type" + str(i) + "_count"]
+                self.dripping(self.areaA_info, "type" + str(i), types[i:], self.image_window.areaA_count[i] - params.max_pixelsA[i])
 
             if self.image_window.areaB_count[i] > params.max_pixelsB[i] != 0:
-                self.dripping(self.areaB_info,
-                              "type" + str(i),
-                              self.areaB_info["type" + str(i)][params.max_pixelsB[i]:],
-                              types[i:])
-                self.image_window.areaB_count[i] = self.areaB_info["type" + str(i) + "_count"]
+                self.dripping(self.areaB_info, "type" + str(i), types[i:], self.image_window.areaB_count[i] - params.max_pixelsB[i])
 
             if self.image_window.areaC_count[i] > params.max_pixelsC[i] != 0:
-                self.dripping(self.areaC_info,
-                              "type" + str(i),
-                              self.areaC_info["type" + str(i)][params.max_pixelsC[i + 1]:],
-                              types[i:])
-                self.image_window.areaC_count[i] = self.areaC_info["type" + str(i) + "_count"]
+                self.dripping(self.areaC_info, "type" + str(i), types[i:], self.image_window.areaC_count[i] - params.max_pixelsC[i])
 
+        self.update_counts()
     def AJ_tests_final(self):
         tests_results = [True, True, True,
                          True]  # contains results for pass/fail (True/False) for each adjacent type in all areas

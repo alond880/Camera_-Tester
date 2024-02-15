@@ -388,3 +388,20 @@
 2024-02-14 12:18:41,606 - logger - INFO - Check failed: type1: 0     type2: 10     type3: 3     type4: 0     type5: 0     
 2024-02-14 12:18:41,607 - logger - INFO - Check failed: areaC
 2024-02-14 12:18:41,607 - logger - INFO - Check failed: type1: 0     type2: 28     type3: 29     type4: 4     type5: 1     
+2024-02-15 10:48:34,456 - logger - ERROR - Dripping: list index out of range
+2024-02-15 10:48:34,457 - logger - ERROR - Dripping: list index out of range
+2024-02-15 10:50:24,935 - logger - ERROR - Dripping: list index out of range
+2024-02-15 10:50:24,936 - logger - ERROR - Dripping: list index out of range
+2024-02-15 10:52:28,689 - logger - ERROR - Dripping: list index out of range
+2024-02-15 10:52:28,691 - logger - INFO - Check failed: area0
+2024-02-15 10:52:28,691 - logger - INFO - Check failed: type1: 0     type2: 0     type3: 0     type4: 0     type5: 0     
+2024-02-15 11:18:15,042 - logger - ERROR - Dripping: list index out of range
+2024-02-15 11:18:15,046 - logger - ERROR - Dripping: list index out of range
+2024-02-15 11:18:48,496 - logger - ERROR - Dripping: list index out of range
+2024-02-15 11:18:48,501 - logger - INFO - Check failed: area0
+2024-02-15 11:18:48,502 - logger - INFO - Check failed: type1: 0     type2: 0     type3: 0     type4: 0     type5: 0     
+2024-02-15 11:21:01,788 - logger - ERROR - Dripping: list index out of range
+2024-02-15 11:21:01,792 - logger - INFO - Check failed: area0
+2024-02-15 11:21:01,794 - logger - INFO - Check failed: type1: 0     type2: 0     type3: 0     type4: 0     type5: 0     
+2024-02-15 11:21:01,797 - logger - INFO - Check failed: areaC
+2024-02-15 11:21:01,798 - logger - INFO - Check failed: type1: 70     type2: 4     type3: 0     type4: 2     type5: 0     

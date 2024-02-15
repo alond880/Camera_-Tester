@@ -67,8 +67,9 @@ class ImageWindow(QMainWindow):
         self.areaB_count = [0] * 6
         self.areaC_count = [0] * 6
 
+        self.area0_fill_label = QLabel("", self)
+
         # area0 count label
-        # self.area0_fill_label = QLabel("", self)
         # self.count_label0 = QLabel("0", self)
         # self.count_label0.setGeometry(self.area0[0] - 15, self.area0[1] - 15, 15, 15)
         # self.count_label0.setStyleSheet("background-color: red")
