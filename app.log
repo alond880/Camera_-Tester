@@ -405,3 +405,23 @@
 2024-02-15 11:21:01,794 - logger - INFO - Check failed: type1: 0     type2: 0     type3: 0     type4: 0     type5: 0     
 2024-02-15 11:21:01,797 - logger - INFO - Check failed: areaC
 2024-02-15 11:21:01,798 - logger - INFO - Check failed: type1: 70     type2: 4     type3: 0     type4: 2     type5: 0     
+2024-02-15 14:19:40,211 - logger - INFO - Check failed: area0
+2024-02-15 14:19:40,214 - logger - INFO - Check failed: type1: 2     type2: 0     type3: 0     type4: 0     type5: 0     
+2024-02-15 14:19:40,214 - logger - INFO - Check failed: areaB
+2024-02-15 14:19:40,215 - logger - INFO - Check failed: type1: 20     type2: 6     type3: 0     type4: 0     type5: 0     
+2024-02-15 14:19:40,215 - logger - INFO - Check failed: areaC
+2024-02-15 14:19:40,215 - logger - INFO - Check failed: type1: 100     type2: 15     type3: 8     type4: 2     type5: 1     
+2024-02-15 14:24:13,394 - logger - INFO - Check failed: area0
+2024-02-15 14:24:13,395 - logger - INFO - Check failed: type1: 1     type2: 0     type3: 0     type4: 0     type5: 0     
+2024-02-15 14:24:13,396 - logger - INFO - Check failed: areaC
+2024-02-15 14:24:13,396 - logger - INFO - Check failed: type1: 85     type2: 8     type3: 5     type4: 2     type5: 1     
+2024-02-15 14:26:03,780 - logger - INFO - Check failed: areaA
+2024-02-15 14:26:03,781 - logger - INFO - Check failed: type1: 5     type2: 5     type3: 0     type4: 0     type5: 0     
+2024-02-15 14:26:03,781 - logger - INFO - Check failed: areaC
+2024-02-15 14:26:03,782 - logger - INFO - Check failed: type1: 85     type2: 8     type3: 5     type4: 2     type5: 1     
+2024-02-15 14:26:17,199 - logger - INFO - Check failed: area0
+2024-02-15 14:26:17,200 - logger - INFO - Check failed: type1: 2     type2: 0     type3: 0     type4: 0     type5: 0     
+2024-02-15 14:26:17,201 - logger - INFO - Check failed: areaB
+2024-02-15 14:26:17,201 - logger - INFO - Check failed: type1: 20     type2: 6     type3: 0     type4: 0     type5: 0     
+2024-02-15 14:26:17,202 - logger - INFO - Check failed: areaC
+2024-02-15 14:26:17,202 - logger - INFO - Check failed: type1: 100     type2: 15     type3: 8     type4: 2     type5: 1     

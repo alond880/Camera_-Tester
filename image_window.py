@@ -62,10 +62,10 @@ class ImageWindow(QMainWindow):
         self.rC = QtGui.QRegion(self.areaC[0], self.areaC[1], self.areaC[2], self.areaC[3])
 
         # 6 elements: 5 for each adjacent type +1 for mouseclick user addups
-        self.area0_count = [0] * 6
-        self.areaA_count = [0] * 6
-        self.areaB_count = [0] * 6
-        self.areaC_count = [0] * 6
+        self.area0_count = [0] * 5
+        self.areaA_count = [0] * 5
+        self.areaB_count = [0] * 5
+        self.areaC_count = [0] * 5
 
         self.area0_fill_label = QLabel("", self)
 

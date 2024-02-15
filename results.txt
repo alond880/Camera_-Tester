@@ -1,4 +1,156 @@
-only_inner.txt  14:39 29:1:2023 :
-area0: 6 pixels - failed
-area1: 0 pixels - passed
-area2: 0 pixels - passed
+2024-02-15 14:28:14.225889  TEST RESULT: PASS
+AREA 0: 
+type1: GROUP COUNT: 1
+type2: GROUP COUNT: 0
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA A: 
+type1: GROUP COUNT: 1
+type2: GROUP COUNT: 1
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA B: 
+type1: GROUP COUNT: 10
+type2: GROUP COUNT: 3
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA C: 
+type1: GROUP COUNT: 50
+type2: GROUP COUNT: 6
+type3: GROUP COUNT: 5
+type4: GROUP COUNT: 1
+type5: GROUP COUNT: 1
+-----------------------------------------------------------------
+2024-02-15 14:28:14.631776  TEST RESULT: PASS
+AREA 0: 
+type1: GROUP COUNT: 1
+type2: GROUP COUNT: 0
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA A: 
+type1: GROUP COUNT: 1
+type2: GROUP COUNT: 1
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA B: 
+type1: GROUP COUNT: 10
+type2: GROUP COUNT: 3
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA C: 
+type1: GROUP COUNT: 50
+type2: GROUP COUNT: 6
+type3: GROUP COUNT: 5
+type4: GROUP COUNT: 1
+type5: GROUP COUNT: 1
+-----------------------------------------------------------------
+2024-02-15 14:28:15.031705  TEST RESULT: PASS
+AREA 0: 
+type1: GROUP COUNT: 1
+type2: GROUP COUNT: 0
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA A: 
+type1: GROUP COUNT: 1
+type2: GROUP COUNT: 1
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA B: 
+type1: GROUP COUNT: 10
+type2: GROUP COUNT: 3
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA C: 
+type1: GROUP COUNT: 50
+type2: GROUP COUNT: 6
+type3: GROUP COUNT: 5
+type4: GROUP COUNT: 1
+type5: GROUP COUNT: 1
+-----------------------------------------------------------------
+2024-02-15 14:28:15.466542  TEST RESULT: PASS
+AREA 0: 
+type1: GROUP COUNT: 1
+type2: GROUP COUNT: 0
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA A: 
+type1: GROUP COUNT: 1
+type2: GROUP COUNT: 1
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA B: 
+type1: GROUP COUNT: 10
+type2: GROUP COUNT: 3
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA C: 
+type1: GROUP COUNT: 50
+type2: GROUP COUNT: 6
+type3: GROUP COUNT: 5
+type4: GROUP COUNT: 1
+type5: GROUP COUNT: 1
+-----------------------------------------------------------------
+2024-02-15 14:28:15.884425  TEST RESULT: PASS
+AREA 0: 
+type1: GROUP COUNT: 1
+type2: GROUP COUNT: 0
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA A: 
+type1: GROUP COUNT: 1
+type2: GROUP COUNT: 1
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA B: 
+type1: GROUP COUNT: 10
+type2: GROUP COUNT: 3
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA C: 
+type1: GROUP COUNT: 50
+type2: GROUP COUNT: 6
+type3: GROUP COUNT: 5
+type4: GROUP COUNT: 1
+type5: GROUP COUNT: 1
+-----------------------------------------------------------------
+2024-02-15 14:28:16.291336  TEST RESULT: PASS
+AREA 0: 
+type1: GROUP COUNT: 1
+type2: GROUP COUNT: 0
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA A: 
+type1: GROUP COUNT: 1
+type2: GROUP COUNT: 1
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA B: 
+type1: GROUP COUNT: 10
+type2: GROUP COUNT: 3
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA C: 
+type1: GROUP COUNT: 50
+type2: GROUP COUNT: 6
+type3: GROUP COUNT: 5
+type4: GROUP COUNT: 1
+type5: GROUP COUNT: 1
+-----------------------------------------------------------------

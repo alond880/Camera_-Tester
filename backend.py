@@ -1,3 +1,5 @@
+from datetime import datetime
+
 import numpy as np
 import cv2
 
@@ -61,6 +63,8 @@ class BackEnd:
                            }
 
         self.rows_columns_test = True
+        self.results_file_path = 'results.txt'
+        self.pass_fail = True
 
     def start_app(self):
         self.clean_data()
@@ -73,6 +77,7 @@ class BackEnd:
         self.update_red_dots()  # purely for painting the red dots
         self.update_circles()
         self.image_window.update()  # update new changes
+        self.save_results()
         # self.check_group_in_area()
 
         self.image_window.show()
@@ -105,10 +110,38 @@ class BackEnd:
         self.image_window.failed_pixels = []
         self.image_window.red_dots = []
 
-        self.image_window.area0_count = [0] * 6
-        self.image_window.areaA_count = [0] * 6
-        self.image_window.areaB_count = [0] * 6
-        self.image_window.areaC_count = [0] * 6
+        # 5 because there are 5 types
+        self.image_window.area0_count = [0] * 5
+        self.image_window.areaA_count = [0] * 5
+        self.image_window.areaB_count = [0] * 5
+        self.image_window.areaC_count = [0] * 5
+
+        self.area0_info = {"type1": [], "type1_count": 0, "type1_max_count": params.max_pixels0[0],
+                           "type2": [], "type2_count": 0, "type2_max_count": params.max_pixels0[1],
+                           "type3": [], "type3_count": 0, "type3_max_count": params.max_pixels0[2],
+                           "type4": [], "type4_count": 0, "type4_max_count": params.max_pixels0[3],
+                           "type5": [], "type5_count": 0, "type5_max_count": params.max_pixels0[4]
+                           }
+        self.areaA_info = {"type1": [], "type1_count": 0, "type1_max_count": params.max_pixelsA[0],
+                           "type2": [], "type2_count": 0, "type2_max_count": params.max_pixelsA[1],
+                           "type3": [], "type3_count": 0, "type3_max_count": params.max_pixelsA[2],
+                           "type4": [], "type4_count": 0, "type4_max_count": params.max_pixelsA[3],
+                           "type5": [], "type5_count": 0, "type5_max_count": params.max_pixelsA[4]
+                           }
+        self.areaB_info = {"type1": [], "type1_count": 0, "type1_max_count": params.max_pixelsB[0],
+                           "type2": [], "type2_count": 0, "type2_max_count": params.max_pixelsB[1],
+                           "type3": [], "type3_count": 0, "type3_max_count": params.max_pixelsB[2],
+                           "type4": [], "type4_count": 0, "type4_max_count": params.max_pixelsB[3],
+                           "type5": [], "type5_count": 0, "type5_max_count": params.max_pixelsB[4]
+                           }
+        self.areaC_info = {"type1": [], "type1_count": 0, "type1_max_count": params.max_pixelsC[0],
+                           "type2": [], "type2_count": 0, "type2_max_count": params.max_pixelsC[1],
+                           "type3": [], "type3_count": 0, "type3_max_count": params.max_pixelsC[2],
+                           "type4": [], "type4_count": 0, "type4_max_count": params.max_pixelsC[3],
+                           "type5": [], "type5_count": 0, "type5_max_count": params.max_pixelsC[4]
+                           }
+
+        self.pass_fail = True
 
         self.image_window.pass_fail_label.setText("Pass")
         self.image_window.pass_fail_label.setHidden(True)  # Set the label as hidden initially
@@ -259,21 +292,24 @@ class BackEnd:
     def update_counts(self):
         try:
             for i in range(1, 6):
-                self.image_window.area0_count[i-1] = self.area0_info["type" + str(i) + "_count"]
-                self.image_window.areaA_count[i-1] = self.areaA_info["type" + str(i) + "_count"]
-                self.image_window.areaB_count[i-1] = self.areaB_info["type" + str(i) + "_count"]
-                self.image_window.areaC_count[i-1] = self.areaC_info["type" + str(i) + "_count"]
+                self.image_window.area0_count[i - 1] = self.area0_info["type" + str(i) + "_count"]
+                self.image_window.areaA_count[i - 1] = self.areaA_info["type" + str(i) + "_count"]
+                self.image_window.areaB_count[i - 1] = self.areaB_info["type" + str(i) + "_count"]
+                self.image_window.areaC_count[i - 1] = self.areaC_info["type" + str(i) + "_count"]
 
         except Exception as e:
             self.logger.log_exception(f"Update_counts: {e}")
+
     def dripping(self, area_info, origin_type, bigger_types, extra_groups_num):
         try:
             for type in bigger_types:  # for each type in the following types in the hierarchy
-                while extra_groups_num > 0:  # while there is room
-                    if area_info[type + "_max_count"] > area_info[type + "_count"]:
+                while extra_groups_num > 0:  # there are extra groups
+                    if area_info[type + "_max_count"] > area_info[type + "_count"]:  # if there is room in this type
+                        #  transfer group
                         group = area_info[origin_type].pop(-1)
                         area_info[type].append(group)
 
+                        # update counts
                         extra_groups_num -= 1
                         area_info[origin_type + "_count"] -= 1
                         area_info[type + "_count"] += 1
@@ -288,24 +324,28 @@ class BackEnd:
         except Exception as e:
             self.logger.log_error(f"Dripping: {e}")
 
-
     def dripping_check(self):
         types = ["type1", "type2", "type3", "type4", "type5"]
 
         for i in range(0, 5):
             if self.image_window.area0_count[i] > params.max_pixels0[i] != 0:
-                self.dripping(self.area0_info, "type" + str(i), types[i:], self.image_window.area0_count[i] - params.max_pixels0[i])
+                self.dripping(self.area0_info, "type" + str(i), types[i:],
+                              self.image_window.area0_count[i] - params.max_pixels0[i])
 
             if self.image_window.areaA_count[i] > params.max_pixelsA[i] != 0:
-                self.dripping(self.areaA_info, "type" + str(i), types[i:], self.image_window.areaA_count[i] - params.max_pixelsA[i])
+                self.dripping(self.areaA_info, "type" + str(i), types[i:],
+                              self.image_window.areaA_count[i] - params.max_pixelsA[i])
 
             if self.image_window.areaB_count[i] > params.max_pixelsB[i] != 0:
-                self.dripping(self.areaB_info, "type" + str(i), types[i:], self.image_window.areaB_count[i] - params.max_pixelsB[i])
+                self.dripping(self.areaB_info, "type" + str(i), types[i:],
+                              self.image_window.areaB_count[i] - params.max_pixelsB[i])
 
             if self.image_window.areaC_count[i] > params.max_pixelsC[i] != 0:
-                self.dripping(self.areaC_info, "type" + str(i), types[i:], self.image_window.areaC_count[i] - params.max_pixelsC[i])
+                self.dripping(self.areaC_info, "type" + str(i), types[i:],
+                              self.image_window.areaC_count[i] - params.max_pixelsC[i])
 
         self.update_counts()
+
     def AJ_tests_final(self):
         tests_results = [True, True, True,
                          True]  # contains results for pass/fail (True/False) for each adjacent type in all areas
@@ -314,18 +354,22 @@ class BackEnd:
         for i in range(0, 5):
             if self.image_window.area0_count[i] > params.max_pixels0[i] != 0:
                 tests_results[i] = False
+                self.pass_fail = False
                 print(f"AREA 0 FAILED: area0_count[{i}]: {self.image_window.area0_count[i]} > {params.max_pixels0[i]}")
 
             if self.image_window.areaA_count[i] > params.max_pixelsA[i]:
                 tests_results[i] = False
+                self.pass_fail = False
                 print(f"AREA A FAILED: areaA_count[{i}]: {self.image_window.areaA_count[i]} > {params.max_pixelsA[i]}")
 
             if self.image_window.areaB_count[i] > params.max_pixelsB[i]:
                 tests_results[i] = False
+                self.pass_fail = False
                 print(f"AREA B FAILED: areaB_count[{i}]: {self.image_window.areaB_count[i]} > {params.max_pixelsB[i]}")
 
             if self.image_window.areaC_count[i] > params.max_pixelsC[i]:
                 tests_results[i] = False
+                self.pass_fail = False
                 print(f"AREA C FAILED: areaC_count[{i}]: {self.image_window.areaC_count[i]} > {params.max_pixelsC[i]}")
 
         if not tests_results[0]:
@@ -482,6 +526,39 @@ class BackEnd:
             return False  # test failed
         else:
             return True  # test passed
+
+    def save_results(self):
+        if self.pass_fail:
+            test_str = "PASS"
+        else:
+            test_str = "FAIL"
+
+        try:
+            with open(self.results_file_path, "a") as file:
+                file.write(str(datetime.now()) + "  TEST RESULT: " + test_str + "\n")
+
+                file.write("AREA 0: \n")
+                for i, val in enumerate(self.image_window.area0_count):
+                    file.write(f"type{str(i+1)}: GROUP COUNT: {val}\n")
+
+                file.write("AREA A: \n")
+                for i, val in enumerate(self.image_window.areaA_count):
+                    file.write(f"type{str(i+1)}: GROUP COUNT: {val}\n")
+
+                file.write("AREA B: \n")
+                for i, val in enumerate(self.image_window.areaB_count):
+                    file.write(f"type{str(i+1)}: GROUP COUNT: {val}\n")
+
+                file.write("AREA C: \n")
+                for i, val in enumerate(self.image_window.areaC_count):
+                    file.write(f"type{str(i+1)}: GROUP COUNT: {val}\n")
+
+
+
+                file.write("-----------------------------------------------------------------\n")
+
+        except Exception as e:
+            self.logger.log_exception(f"Failed to save results:     {e}")
 
     # def find_dead_rows_and_columns(self, arr, num=1):
     #     # Initialize dictionaries to store pixel coordinates grouped by columns and rows
