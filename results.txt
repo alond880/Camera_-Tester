@@ -1,4 +1,33 @@
-2024-02-15 15:08:12.860376  TEST RESULT: PASS
+----C:/Users/Barak/Desktop/CT_V2.1/test files/VX005690.txt----
+2024-02-18 11:04:58.299732  TEST RESULT: PASS
+AREA 0: 
+type1: GROUP COUNT: 0
+type2: GROUP COUNT: 0
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA A: 
+type1: GROUP COUNT: 4
+type2: GROUP COUNT: 1
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA B: 
+type1: GROUP COUNT: 9
+type2: GROUP COUNT: 1
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA C: 
+type1: GROUP COUNT: 41
+type2: GROUP COUNT: 3
+type3: GROUP COUNT: 1
+type4: GROUP COUNT: 1
+type5: GROUP COUNT: 0
+*rows and columns: True
+-----------------------------------------------------------------
+----C:/Users/Barak/Desktop/CT_V2.1/test files/VX006152.txt----
+2024-02-18 11:05:06.342705  TEST RESULT: PASS
 AREA 0: 
 type1: GROUP COUNT: 0
 type2: GROUP COUNT: 0
@@ -12,15 +41,184 @@ type3: GROUP COUNT: 0
 type4: GROUP COUNT: 0
 type5: GROUP COUNT: 0
 AREA B: 
-type1: GROUP COUNT: 11
+type1: GROUP COUNT: 4
+type2: GROUP COUNT: 1
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA C: 
+type1: GROUP COUNT: 21
+type2: GROUP COUNT: 3
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 1
+type5: GROUP COUNT: 0
+*rows and columns: False
+-----------------------------------------------------------------
+----C:/Users/Barak/Desktop/CT_V2.1/test files/VX006161.txt----
+2024-02-18 11:05:12.707689  TEST RESULT: PASS
+AREA 0: 
+type1: GROUP COUNT: 0
+type2: GROUP COUNT: 0
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA A: 
+type1: GROUP COUNT: 2
+type2: GROUP COUNT: 0
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA B: 
+type1: GROUP COUNT: 4
 type2: GROUP COUNT: 0
 type3: GROUP COUNT: 0
 type4: GROUP COUNT: 0
 type5: GROUP COUNT: 0
 AREA C: 
-type1: GROUP COUNT: 35
-type2: GROUP COUNT: 2
+type1: GROUP COUNT: 27
+type2: GROUP COUNT: 1
 type3: GROUP COUNT: 0
 type4: GROUP COUNT: 1
 type5: GROUP COUNT: 0
+*rows and columns: True
+-----------------------------------------------------------------
+----C:/Users/Barak/Desktop/CT_V2.1/test files/VX006174.txt----
+2024-02-18 11:05:17.491864  TEST RESULT: PASS
+AREA 0: 
+type1: GROUP COUNT: 0
+type2: GROUP COUNT: 0
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA A: 
+type1: GROUP COUNT: 4
+type2: GROUP COUNT: 4
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA B: 
+type1: GROUP COUNT: 30
+type2: GROUP COUNT: 0
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA C: 
+type1: GROUP COUNT: 50
+type2: GROUP COUNT: 43
+type3: GROUP COUNT: 1
+type4: GROUP COUNT: 1
+type5: GROUP COUNT: 1
+*rows and columns: False
+-----------------------------------------------------------------
+----C:/Users/Barak/Desktop/CT_V2.1/test files/VX006174.txt----
+2024-02-18 11:05:23.145811  TEST RESULT: PASS
+AREA 0: 
+type1: GROUP COUNT: 0
+type2: GROUP COUNT: 0
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA A: 
+type1: GROUP COUNT: 4
+type2: GROUP COUNT: 4
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA B: 
+type1: GROUP COUNT: 30
+type2: GROUP COUNT: 0
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA C: 
+type1: GROUP COUNT: 50
+type2: GROUP COUNT: 43
+type3: GROUP COUNT: 1
+type4: GROUP COUNT: 1
+type5: GROUP COUNT: 1
+*rows and columns: False
+-----------------------------------------------------------------
+----C:/Users/Barak/Desktop/CT_V2.1/test files/VX006181.txt----
+2024-02-18 11:05:28.574122  TEST RESULT: PASS
+AREA 0: 
+type1: GROUP COUNT: 0
+type2: GROUP COUNT: 0
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA A: 
+type1: GROUP COUNT: 4
+type2: GROUP COUNT: 3
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA B: 
+type1: GROUP COUNT: 15
+type2: GROUP COUNT: 0
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA C: 
+type1: GROUP COUNT: 41
+type2: GROUP COUNT: 0
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 1
+type5: GROUP COUNT: 0
+*rows and columns: False
+-----------------------------------------------------------------
+----C:/Users/Barak/Desktop/CT_V2.1/test files/VX006183.txt----
+2024-02-18 11:05:34.672967  TEST RESULT: PASS
+AREA 0: 
+type1: GROUP COUNT: 0
+type2: GROUP COUNT: 0
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA A: 
+type1: GROUP COUNT: 4
+type2: GROUP COUNT: 0
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA B: 
+type1: GROUP COUNT: 37
+type2: GROUP COUNT: 0
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA C: 
+type1: GROUP COUNT: 67
+type2: GROUP COUNT: 50
+type3: GROUP COUNT: 5
+type4: GROUP COUNT: 1
+type5: GROUP COUNT: 1
+*rows and columns: False
+-----------------------------------------------------------------
+----C:/Users/Barak/Desktop/CT_V2.1/test files/VX008329.txt----
+2024-02-18 11:05:38.983270  TEST RESULT: PASS
+AREA 0: 
+type1: GROUP COUNT: 1
+type2: GROUP COUNT: 0
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA A: 
+type1: GROUP COUNT: 4
+type2: GROUP COUNT: 4
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA B: 
+type1: GROUP COUNT: 20
+type2: GROUP COUNT: 1
+type3: GROUP COUNT: 0
+type4: GROUP COUNT: 0
+type5: GROUP COUNT: 0
+AREA C: 
+type1: GROUP COUNT: 50
+type2: GROUP COUNT: 13
+type3: GROUP COUNT: 1
+type4: GROUP COUNT: 1
+type5: GROUP COUNT: 0
+*rows and columns: False
 -----------------------------------------------------------------

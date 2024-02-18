@@ -142,6 +142,7 @@ class BackEnd:
                            }
 
         self.pass_fail = True
+        self.rows_columns_test = True
 
         self.image_window.pass_fail_label.setText("Pass")
         self.image_window.pass_fail_label.setHidden(True)  # Set the label as hidden initially
@@ -347,8 +348,7 @@ class BackEnd:
         self.update_counts()
 
     def AJ_tests_final(self):
-        tests_results = [True, True, True,
-                         True]  # contains results for pass/fail (True/False) for each adjacent type in all areas
+        tests_results = [True, True, True, True]  # contains results for pass/fail (True/False) for each adjacent type in all areas
 
         # I am so very sorry for this absolute garbage of a code
         for i in range(0, 5):
@@ -528,6 +528,10 @@ class BackEnd:
             return True  # test passed
 
     def save_results(self):
+        print(self.image_window.pix_fname)
+        print(f"pass_faile: {self.pass_fail}\nrows_columns: {self.rows_columns_test}\nboth: {self.pass_fail and self.rows_columns_test}")
+
+        #  if self.pass_fail and self.rows_columns_test:
         if self.pass_fail:
             test_str = "PASS"
         else:
@@ -535,6 +539,8 @@ class BackEnd:
 
         try:
             with open(self.results_file_path, "a") as file:
+                file.write(f"----{self.image_window.pix_fname}----\n")
+
                 file.write(str(datetime.now()) + "  TEST RESULT: " + test_str + "\n")
 
                 file.write("AREA 0: \n")
@@ -553,6 +559,8 @@ class BackEnd:
                 for i, val in enumerate(self.image_window.areaC_count):
                     file.write(f"type{str(i+1)}: GROUP COUNT: {val}\n")
 
+                #  True==Pass, False==Fail
+                file.write(f"*rows and columns: {self.rows_columns_test}\n")
 
 
                 file.write("-----------------------------------------------------------------\n")
@@ -560,27 +568,27 @@ class BackEnd:
         except Exception as e:
             self.logger.log_exception(f"Failed to save results:     {e}")
 
-    # def find_dead_rows_and_columns(self, arr, num=1):
-    #     # Initialize dictionaries to store pixel coordinates grouped by columns and rows
-    #     columns = {}
-    #     rows = {}
-    #
-    #     # Group pixel coordinates by columns and rows
-    #     for x, y in arr:
-    #         col_index = x // num
-    #         row_index = y // num
-    #
-    #         # If the column index is not in the dictionary, add it
-    #         if col_index not in columns:
-    #             columns[col_index] = []
-    #         # If the row index is not in the dictionary, add it
-    #         if row_index not in rows:
-    #             rows[row_index] = []
-    #
-    #         columns[col_index].append((x, y))
-    #         rows[row_index].append((x, y))
-    #
-    #     return columns, rows
+    def find_dead_rows_and_columns(self, arr, num=1):
+        # Initialize dictionaries to store pixel coordinates grouped by columns and rows
+        columns = {}
+        rows = {}
+
+        # Group pixel coordinates by columns and rows
+        for x, y in arr:
+            col_index = x // num
+            row_index = y // num
+
+            # If the column index is not in the dictionary, add it
+            if col_index not in columns:
+                columns[col_index] = []
+            # If the row index is not in the dictionary, add it
+            if row_index not in rows:
+                rows[row_index] = []
+
+            columns[col_index].append((x, y))
+            rows[row_index].append((x, y))
+
+        return columns, rows
 
     # def check_group_in_area(self, group):
     #     for arr in self.image_window.red_dots:
